@@ -1,12 +1,10 @@
-puts "bonjours, veuillez entrer votre mois de naissance"
-print ">"
-nb = Integer(gets.chomp)
+puts "bonjours! veuillez entrer votre age:"
+age = Integer(gets.chomp)
 
-
-((nb+1)...2017).each do |n|
-	if (2017-n) != (n-nb)
-		puts "il y a #{2017-n} ans, vous avez #{n-nb} ans"
+for i in (1..age) do
+	if (age-i) != i
+		puts "il y a #{age-i}, vous avez eu #{i} ans"
 	else
-		puts "il y a #{2017-n} ans, vous avez la moitie de ton age maintenant"
+		puts  "il y a #{i} ans, vous avez la moitie de votre age maintenant"
 	end
 end
